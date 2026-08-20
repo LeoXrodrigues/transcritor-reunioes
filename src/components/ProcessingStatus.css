@@ -1,0 +1,13 @@
+.processing-status {
+  font-size: 15px;
+  margin: 16px 0 0;
+}
+
+.processing-status-file {
+  color: var(--text-h);
+  font-family: var(--mono);
+}
+
+.processing-status-error {
+  color: #e5484d;
+}

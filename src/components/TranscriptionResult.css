@@ -1,0 +1,35 @@
+.transcription-result {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  text-align: left;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .transcription-result {
+    grid-template-columns: 1fr;
+  }
+}
+
+.transcription-column {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  background: var(--code-bg);
+}
+
+.transcription-column-formatted {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
+.transcription-column h2 {
+  margin: 0 0 12px;
+}
+
+.transcription-text {
+  white-space: pre-wrap;
+  line-height: 160%;
+  color: var(--text);
+}

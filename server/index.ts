@@ -74,6 +74,12 @@ app.use((error: unknown, _req: Request, res: Response, _next: NextFunction) => {
   res.status(500).json({ error: 'Erro interno do servidor.' })
 })
 
-app.listen(PORT, () => {
-  console.log(`Servidor de transcrição rodando em http://localhost:${PORT}`)
-})
+// Na Vercel o app é importado por api/index.ts e servido como serverless
+// function — app.listen() só roda em ambiente local (npm run dev / npm run server).
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Servidor de transcrição rodando em http://localhost:${PORT}`)
+  })
+}
+
+export default app

@@ -195,7 +195,7 @@ Deploy feito na Vercel a partir do repositório do GitHub, com detecção autom�
 ![Collaborator @pedrosatin](evidencias/12-collaborator.png)
 
 ---
-
+OBS:  Todas as prints estão na pasta de evidencias.
 ## 8. Integrantes
 
 | Nome | RA |

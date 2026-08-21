@@ -72,7 +72,7 @@ Um ponto que vale destacar: o prompt de few-shot não foi escrito para o Claude 
 
 ![Primeiro retorno](<evidencias/Primeiro retorno da IA.jpeg>)
 
-![Arquivos criados](evidencias/04b-arquivos-criados.jpeg)
+![Gastos Prompt Principal](<evidencias\Gasto do Prompt principal.jpeg>)
 
 ---
 
@@ -180,8 +180,6 @@ Os valores calculados ficam consistentemente abaixo dos exibidos pelo `/cost`. A
 
 ## 6. Comprovação dos números
 
-![Transcript com o campo usage](evidencias/11-transcript-usage.png)
-
 Os números da tabela foram extraídos do transcript da sessão, em `~/.claude/projects/`, onde cada mensagem do assistente registra um bloco `usage` com `input_tokens` e `output_tokens`, e conferidos contra a saída do comando `/cost`.
 
 ---
@@ -191,8 +189,6 @@ Os números da tabela foram extraídos do transcript da sessão, em `~/.claude/p
 https://transcritor-reunioes-nine.vercel.app/
 
 Deploy feito na Vercel a partir do repositório do GitHub, com detecção automática do framework Vite. A chave de API fica em variável de ambiente na Vercel e as chamadas passam por função serverless, de modo que a credencial não é exposta no frontend.
-
-![Collaborator @pedrosatin](evidencias/12-collaborator.png)
 
 ---
 OBS:  Todas as prints estão na pasta de evidencias.

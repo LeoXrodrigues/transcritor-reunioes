@@ -48,11 +48,11 @@ Regras inegociáveis:
    do projeto Vitryne.
 ```
 
-![CLAUDE.md no editor](evidencias/Linha de pensamento da IA.jpeg)
+![CLAUDE.md no editor](<evidencias/Linha de pensamento da IA.jpeg>)
 
 Modelo utilizado na sessão: **Sonnet 5**, via Claude Code v2.1.237.
 
-![Modelo utilizado](evidencias/Qual modelo foi ultilizado.jpeg)
+![Modelo utilizado](<evidencias/Qual modelo foi ultilizado.jpeg>)
 
 ---
 
@@ -174,7 +174,7 @@ Botões — Teste 2 = (2 / 1.000.000) x 2 + (1.000 / 1.000.000) x 10
 
 Os valores calculados ficam consistentemente abaixo dos exibidos pelo `/cost`. A diferença é explicada pelo fato de a fórmula do enunciado considerar apenas tokens de entrada e saída, enquanto a cobrança real inclui também leitura e escrita de cache, que possuem tarifas próprias. Como o volume de cache chegou à casa dos milhões de tokens, ele responde por quase todo o valor apresentado pela ferramenta. Essa é a razão pela qual a economia observada no teste de curadoria aparece com magnitudes diferentes nas duas formas de medir: 44 por cento pelo `/cost` e 71 por cento pela fórmula.
 
-![Tabela de preços oficial](<evidencias\Tabela de precos oficial.png>)
+![Tabela de preços oficial](<evidencias/Tabela de precos oficial.png>)
 
 ---
 

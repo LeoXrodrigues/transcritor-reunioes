@@ -48,11 +48,11 @@ Regras inegociáveis:
    do projeto Vitryne.
 ```
 
-![CLAUDE.md no editor](evidencias\Linha de pensamento da IA.jpeg)
+![CLAUDE.md no editor](evidencias\Linha-de-pensamento-da-IA.jpeg)
 
 Modelo utilizado na sessão: **Sonnet 5**, via Claude Code v2.1.237.
 
-![Modelo utilizado](evidencias\Qual modelo foi ultilizado.jpeg)
+![Modelo utilizado](evidencias\Qual-modelo-foi-ultilizado.jpeg)
 
 ---
 
@@ -66,11 +66,11 @@ Foram combinadas duas técnicas no mesmo prompt de geração, cada uma resolvend
 
 Um ponto que vale destacar: o prompt de few-shot não foi escrito para o Claude Code. Ele foi embutido dentro do código, no serviço de formatação, porque é o prompt que a aplicação usa ao chamar a LLM. Existem, portanto, dois níveis de prompt no projeto: o que gerou o código e o que o código carrega dentro de si.
 
-![Prompt principal](evidencias\Prompt principal.jpeg)
+![Prompt principal](evidencias\Prompt-principal.jpeg)
 
-![Linha de pensamento da IA](evidencias\Linha de pensamento da IA.jpeg)
+![Linha de pensamento da IA](evidencias\Linha-de-pensamento-da-IA.jpeg)
 
-![Primeiro retorno](evidencias\Primeiro retorno da IA.jpeg)
+![Primeiro retorno](evidencias\Primeiro-retorno-da-IA.jpeg)
 
 ![Arquivos criados](evidencias/04b-arquivos-criados.jpeg)
 
@@ -94,9 +94,9 @@ Mesma tarefa nos dois cenários, variando apenas o contexto fornecido. Cada test
 | Cache write | 45,0k | 45,0k |
 | Custo pelo `/cost` | $0,3341 | $0,3495 |
 
-![Teste A](evidencias\Gasto do prompt TESTE A.jpeg)
+![Teste A](evidencias\Gasto-do-prompt-TESTE-A.jpeg)
 
-![Teste B](evidencias\Gasto do prompt TESTE B.jpeg)
+![Teste B](evidencias\Gasto-do-prompt-TESTE-B.jpeg)
 
 O resultado foi o oposto do esperado: o Teste B custou 4,6 por cento a mais. A investigação apontou duas causas. Primeiro, após a geração inicial o código foi modularizado, e o `App.tsx` passou a ser apenas um invólucro que importa outro componente, de modo que o trecho enviado não era autossuficiente. Segundo, o Claude Code é uma ferramenta agêntica: ela lê e edita arquivos por conta própria. Colar o trecho no prompt não substituiu a leitura do arquivo, apenas somou conteúdo ao que já seria lido de qualquer forma. O cache read maior no Teste B confirma isso.
 
@@ -114,9 +114,9 @@ O desenho foi corrigido em dois pontos. A tarefa passou a ser maior, com dois bo
 | Duração total | 3m 16s | 2m 26s |
 | Custo pelo `/cost` | $0,51 | $0,2875 |
 
-![Teste 1 — arquivo inteiro](evidencias\Gasto do propt ruim TESTE 1.jpeg)
+![Teste 1 — arquivo inteiro](evidencias\Gasto-do-propt-ruim-TESTE-1.jpeg)
 
-![Teste 2 — só o trecho](evidencias\Gasto do propt bom TESTE 2.jpeg)
+![Teste 2 — só o trecho](evidencias\Gasto-do-propt-bom-TESTE-2.jpeg)
 
 O Teste 2 custou cerca de 44 por cento menos pelo `/cost` e cerca de 71 por cento menos pelo cálculo manual da fórmula do enunciado.
 
